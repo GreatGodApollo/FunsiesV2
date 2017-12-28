@@ -1,0 +1,41 @@
+name: FunsiesV2
+version: ${project.version}
+main: mc.beeztem.plugins.funsiesv2.FunsiesV2
+prefix: FunsiesV2
+authors: [beezTEM]
+description: A Plugin For the Funsies
+website: https://beeztem.github.io/projects/funsies/
+
+commands:
+  fakeop:
+    description: Fake OP Someone!
+    usage: /<command> <player>
+  fakedeop:
+    description: Fake DEOP Someone!
+    usage: /<command> <player>
+  adminchat:
+    description: Admin Only Chat... Self Explanatory
+    aliases: [ao, ac, adminonly]
+    usage: /<command> <message>
+  clearserver:
+    description: Clear the server, useful if people are being general dumbasses and you want to ruin everyones fun.
+    aliases: [cs]
+    usage: /<command>
+  fake:
+    description: A testing command (for now)
+    aliases: [f]
+    usage: /<command> <op|deop|join|leave> <player>
+
+permissions:
+  funsies.troll:
+    description: Use the trolling commands!
+    default: op
+  funsies.adminchat:
+    description: Use and see the admin chat
+    default: op
+  funsies.clearserver:
+    description: Clear the server
+    default: op
+  funsies.swear:
+    description: The Ability To Swear
+    default: false
